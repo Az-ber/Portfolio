@@ -33,8 +33,8 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1500);
   });
 
-  $('.header__btn').on('click', function () {
-    $('.header__top').toggleClass('header__top--active');
+  $('.header__btn, .menu__link').on('click', function () {
+    $('.menu').toggleClass('menu__active');
     $('.header__btn').toggleClass('header__btn--active');
   });
 
