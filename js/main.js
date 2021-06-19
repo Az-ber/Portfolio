@@ -33,7 +33,7 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1500);
   });
 
-  $('.header__btn, .menu__link').on('click', function () {
+  $('.header__btn, .menu__link, .header__logo').on('click', function () {
     $('.menu').toggleClass('menu__active');
     $('.header__btn').toggleClass('header__btn--active');
   });
