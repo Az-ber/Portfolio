@@ -38,4 +38,13 @@ $(function () {
     $('.header__btn').toggleClass('header__btn--active');
   });
 
+  $('.about__tab').on('click', function (e) {
+    e.preventDefault();
+    $('.about__tab').removeClass('about__tab--active');
+    $(this).addClass('about__tab--active');
+
+    $('.about__item').removeClass('about__item--active');
+    $($(this).attr('href')).addClass('about__item--active');
+  });
+
 });
